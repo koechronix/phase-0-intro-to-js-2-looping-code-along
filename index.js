@@ -1,17 +1,17 @@
 // Code your solutions in this file
 //for loop assignment
-const names = ["Guadalupe", "Ollie" ,"Ali"];{
-    event = "suprise";
-}
-function writeCards(names, event) {
-    let thankYouCards = [];
-    for (let i = 0; i < names.length; i++){
+const thankYouCards = [];
+function writeCards(namesArray, event) {
+    for (let i = 0; i < namesArray.length; i++){
         thankYouCards.push(
-            `Thank you, ${names[i]}, for the wonderful ${event}gift!`
+            `Thank you, ${namesArray[i]}, for the wonderful ${event} gift!`
         );
+      
     }
-    return thankYouCards();
+    return thankYouCards;
+   
 }
+// while loop assignment
 
 function countDown(startInt) {
     while (startInt>0){
